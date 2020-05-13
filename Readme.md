@@ -1,7 +1,7 @@
 # Личный проект «Девайс»
 
 * Студент: [Oksana Palladii](https://up.htmlacademy.ru/htmlcss/28/user/476339).
-* Наставник: `Неизвестно`.
+* Наставник: [Анна Пономарёва](https://htmlacademy.ru/profile/id153610).
 
 ---
 
