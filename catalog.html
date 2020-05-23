@@ -7,27 +7,27 @@
 </head>
 <body>
 <header class="main-header container">
-  <a class="site-logo" href="index.html">
-    <img src="img/logo.svg" width="163.3" height="34.96" alt="DEVICE">
-  </a>
-  <form class="form-search">
-    <input type="search" name="search" id="search" value="Поиск по сайту">
-    <label for="search">Поиск</label>
-    <input class="button-search" type="submit" value="Найти">
-  </form>
-  <div>
-    <a class="enter" href="#">Валентин Петухов</a>
-  </div>
-  <div>
-    <a class="enter" href="#">Выйти</a>
-  </div>
-  <div>
-    <a class="compare" href="#">Сравнить</a>
-  </div>
-  <div>
-    <a class="basket" href="#">Корзина</a>
-  </div>
-  <nav>
+  <nav class="main-header-nav" aria-label="Навигация по сайту">
+    <a class="site-logo" href="index.html" aria-label="На главную страницу">
+      <img src="img/logo.svg" width="163.3" height="34.96" alt="логотип DEVICE">
+    </a>
+    <form class="form-search" action="https://echo.htmlacademy.ru" method="get">
+      <input type="search" name="search" id="search" value="Поиск по сайту">
+      <label class="visually-hidden" for="search">Поиск</label>
+      <button class="visually-hidden" type="submit" value="Найти">Найти</button>
+    </form>
+    <div>
+      <a class="enter" href="#">Валентин Петухов</a>
+    </div>
+    <div>
+      <a class="enter" href="#">Войти</a>
+    </div>
+    <div>
+      <a class="compare" href="#">Сравнить</a>
+    </div>
+    <div>
+      <a class="basket" href="#">Корзина</a>
+    </div>
     <ul class="site-navigation">
       <li class="site-navigation-item">
         <a class="site-navigation-link" href="#">Каталог товаров</a>
@@ -62,7 +62,7 @@
   </section>
   <!-- Пропущены разделы выделенные красным -->
 
-  <form class="filter">
+  <form class="filter" action="https://echo.htmlacademy.ru" method="get">
         <fieldset>
           <legend>Цвет</legend>
         <input type="checkbox" name="Black" id="Black" checked>
@@ -83,7 +83,7 @@
           <input type="checkbox" name="No" id="No">
                 <label for="No">Нет</label>
         </fieldset>
-    <button type="submit" href="https://echo.htmlacademy.ru">Показать результат</button>
+    <button type="submit">Показать результат</button>
   </form>
 
   <section class="product-cards">
@@ -95,21 +95,21 @@
       <b>500 р.</b>
     </div>
     <div class="product-cards-item">
-      <img src="img/item2.png" alt="Любительская селфи-палка" width="360" height="380">
+      <img src="img/item2.png" alt="Профессинальная селфи-палка" width="360" height="380">
       <h3>
         <a class="button" href="#">Профессинальная селфи-палка</a>
       </h3>
       <b>500 р.</b>
     </div>
     <div class="product-cards-item">
-      <img src="img/item3.png" alt="Любительская селфи-палка" width="360" height="380">
+      <img src="img/item3.png" alt="Непотопляемая селфи-палка" width="360" height="380">
       <h3>
         <a class="button" href="#">Непотопляемая селфи-палка</a>
       </h3>
       <b>500 р.</b>
     </div>
     <div class="product-cards-item">
-      <img src="img/item4.png" alt="Любительская селфи-палка" width="360" height="380">
+      <img src="img/item4.png" alt="Селфи-палка Следуй за мной" width="360" height="380">
       <h3>
         <a class="button" href="#">Селфи-палка "Следуй за мной"</a>
       </h3>
@@ -120,7 +120,7 @@
 
 <footer class="main-footer">
   <div class="container">
-    <a class="footer-logo" href="index.html#logo">
+    <a class="footer-logo" href="index.html" aria-label="На главную страницу">
       <img src="img/logo.svg" width="163.3" height="34.96" alt="DEVICE">
     </a>
     <div>
@@ -154,13 +154,13 @@
     </ul>
     <ul class="social-list">
       <li class="social-list-item">
-        <a class="social-list-link" href="#">Facebook</a>
+        <a class="social-list-link" href="#" aria-label="Facebook">Facebook</a>
       </li>
       <li class="social-list-item">
-        <a class="social-list-link" href="#">Instagram</a>
+        <a class="social-list-link" href="#" aria-label="Instagram">Instagram</a>
       </li>
       <li class="social-list-item">
-        <a class="social-list-link" href="#">Twitter</a>
+        <a class="social-list-link" href="#" aria-label="Twitter">Twitter</a>
       </li>
     </ul>
   </div>

@@ -7,38 +7,38 @@
   </head>
   <body>
   <header class="main-header container">
-    <a class="site-logo" id="logo">
-        <img src="img/logo.svg" width="163.3" height="34.96" alt="DEVICE">
-    </a>
-    <form class="form-search">
-      <input type="search" name="search" id="search" value="Поиск по сайту">
-          <label for="search">Поиск</label>
-          <input class="button-search" type="submit" value="Найти">
-    </form>
-    <div>
-      <a class="enter" href="#">Войти</a>
-    </div>
-    <div>
-      <a class="compare" href="#">Сравнить</a>
-    </div>
-    <div>
-      <a class="basket" href="#">Корзина</a>
-    </div>
-    <nav>
-      <ul class="site-navigation">
-        <li class="site-navigation-item">
-           <a class="site-navigation-link" href="#">Каталог товаров</a>
-        </li>
-        <li class="site-navigation-item">
-           <a class="site-navigation-link" href="#">Доставка</a>
-        </li>
-        <li class="site-navigation-item">
-           <a class="site-navigation-link" href="#">Гарантия</a>
-        </li>
-         <li class="site-navigation-item">
-           <a class="site-navigation-link" href="#contacts">Контакты</a>
-         </li>
-      </ul>
+    <nav class="main-header-nav" aria-label="Навигация по сайту">
+      <a class="site-logo" id="logo">
+        <img src="img/logo.svg" width="163.3" height="34.96" alt="логотип DEVICE">
+      </a>
+      <form class="form-search" action="https://echo.htmlacademy.ru" method="get">
+        <input type="search" name="search" id="search" value="Поиск по сайту">
+          <label class="visually-hidden" for="search">Поиск</label>
+        <button class="visually-hidden" type="submit" value="Найти">Найти</button>
+      </form>
+      <div>
+        <a class="enter" href="#">Войти</a>
+      </div>
+      <div>
+        <a class="compare" href="#">Сравнить</a>
+      </div>
+      <div>
+        <a class="basket" href="#">Корзина</a>
+      </div>
+        <ul class="site-navigation">
+          <li class="site-navigation-item">
+             <a class="site-navigation-link" href="#">Каталог товаров</a>
+          </li>
+          <li class="site-navigation-item">
+             <a class="site-navigation-link" href="#">Доставка</a>
+          </li>
+          <li class="site-navigation-item">
+             <a class="site-navigation-link" href="#">Гарантия</a>
+          </li>
+          <li class="site-navigation-item">
+             <a class="site-navigation-link" href="#contacts">Контакты</a>
+          </li>
+        </ul>
     </nav>
   </header>
 
@@ -79,16 +79,16 @@
       <a class="map" href="#">
         <img src="img/map.png" width="560" height="222" alt="Карта">
       </a>
-      <br>
-      <a class="feedback-button" href="#">Напишите нам
-      </a>
+      <button type="button">
+        Напишите нам
+      </button>
     </section>
   </main>
 
   <footer class="main-footer">
     <section class="container">
       <div class="footer-top">
-          <a class="footer-logo" href="#logo">
+          <a class="footer-logo" href="#logo" aria-label="Перейти в начало страницы">
              <img src="img/logo.svg" width="163.3" height="34.96" alt="DEVICE">
           </a>
           <div>
@@ -129,13 +129,13 @@
       <div class="footer-bottom">
            <ul class="social-list">
                 <li class="social-list-item">
-                     <a class="social-list-link" href="#">Facebook</a>
+                     <a class="social-list-link" href="#" aria-label="Facebook">Facebook</a>
                 </li>
                 <li class="social-list-item">
-                     <a class="social-list-link" href="#">Instagram</a>
+                     <a class="social-list-link" href="#" aria-label="Instagram">Instagram</a>
                 </li>
                 <li class="social-list-item">
-                     <a class="social-list-link" href="#">Twitter</a>
+                     <a class="social-list-link" href="#" aria-label="Twitter">Twitter</a>
                 </li>
            </ul>
       </div>
@@ -143,3 +143,20 @@
   </footer>
   </body>
 </html>
+
+<section>
+  <button type="button" aria-label="Закрыть">Закрыть</button>
+  <form class="feedback-form" action="https://echo.htmlacademy.ru" method="post">
+    <p>
+      <label for="name">Ваше имя:</label>
+        <input type="text" name="name" id="name" placeholder="Имя Фамилия">
+      <label for="email">Ваш e-mail:</label>
+        <input type="email" name="email" id="email" placeholder="email@example.ru">
+    </p>
+    <p>
+      <label for="text-letter">Текст письма:</label>
+      <input type="text" name="text-letter" id="text-letter" placeholder="В свободной форме">
+    </p>
+    <button type="submit">Отправить</button>
+  </form>
+</section>
