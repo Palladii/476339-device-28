@@ -1,21 +1,24 @@
 <!DOCTYPE html>
 <html lang="ru">
-  <head>
-    <meta charset="utf-8">
-    <link rel="stylesheet" href="css/style.css">
-    <title>HTML Academy: Девайс</title>
-  </head>
-  <body>
-  <header class="main-header container">
-    <nav class="main-header-nav" aria-label="Навигация по сайту">
-      <a class="site-logo" id="logo">
-        <img src="img/logo.svg" width="163.3" height="34.96" alt="логотип DEVICE">
-      </a>
-      <form class="form-search" action="https://echo.htmlacademy.ru" method="get">
-        <input type="search" name="search" id="search" value="Поиск по сайту">
-          <label class="visually-hidden" for="search">Поиск</label>
-        <button class="visually-hidden" type="submit" value="Найти">Найти</button>
-      </form>
+<head>
+  <meta charset="utf-8">
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap" rel="stylesheet">
+  <title>HTML Academy: Девайс</title>
+</head>
+<body>
+<header class="main-header container">
+  <nav class="main-header-nav" aria-label="Навигация по сайту">
+    <a class="site-logo" id="logo">
+      <img src="img/logo.svg" width="163.3" height="34.96" alt="логотип DEVICE">
+    </a>
+    <form class="form-search" action="https://echo.htmlacademy.ru" method="get">
+      <input type="search" name="search" id="search" value="Поиск по сайту">
+      <label class="visually-hidden" for="search">Поиск</label>
+      <button class="visually-hidden" type="submit" value="Найти">Найти</button>
+    </form>
+    <div class="user-navigation">
       <div>
         <a class="enter" href="#">Войти</a>
       </div>
@@ -25,36 +28,38 @@
       <div>
         <a class="basket" href="#">Корзина</a>
       </div>
-        <ul class="site-navigation">
-          <li class="site-navigation-item">
-             <a class="site-navigation-link" href="#">Каталог товаров</a>
-          </li>
-          <li class="site-navigation-item">
-             <a class="site-navigation-link" href="#">Доставка</a>
-          </li>
-          <li class="site-navigation-item">
-             <a class="site-navigation-link" href="#">Гарантия</a>
-          </li>
-          <li class="site-navigation-item">
-             <a class="site-navigation-link" href="#contacts">Контакты</a>
-          </li>
-        </ul>
-    </nav>
-  </header>
+    </div>
+    <ul class="site-navigation">
+      <li class="navigation-item">
+        <a class="navigation-link" href="#">Каталог товаров</a>
+      </li>
+      <li class="navigation-item">
+        <a class="navigation-link" href="#">Доставка</a>
+      </li>
+      <li class="navigation-item">
+        <a class="site-navigation-link" href="#">Гарантия</a>
+      </li>
+      <li class="navigation-item">
+        <a class="navigation-link" href="#contacts">Контакты</a>
+      </li>
+    </ul>
+  </nav>
+</header>
 
-  <main>
-    <h1 class="visually-hidden">DEVICE</h1>
-    <!-- Пропущены разделы выделенные красным -->
+<main>
+  <h1 class="visually-hidden">DEVICE</h1>
+  <!-- Пропущены разделы выделенные красным -->
 
+  <div class="index-columns">
     <section class="about-us">
       <h2 class="about-us-title">О нас</h2>
       <p class="about-us-index">
-          Огромный выбор гаджетов не оставит равнодушным гика,
-          который есть в каждом из нас.
+        Огромный выбор гаджетов не оставит равнодушным гика,
+        который есть в каждом из нас.
       </p>
       <p class="about-us-index">
-          Мы можем доставить ваш товар в самые отдаленные точки
-          России! DEVICE работает со многими транспортными компаниями:
+        Мы можем доставить ваш товар в самые отдаленные точки
+        России! DEVICE работает со многими транспортными компаниями:
       </p>
       <ul class="delivery">
         <li class="delivery-item">
@@ -67,8 +72,12 @@
           <a class="delivery-link" href="#">ЖелДорЭкспедиция</a>
         </li>
       </ul>
-      <a class="about-us-button" href="#">Подробнее о нас</a>
+      <div class="columns-button">
+        <a class="button" href=" #"> Подробнее о нас</a>
+      </div>
+
     </section>
+
 
     <section class="contacts" id="contacts">
       <h2 class="contacts-title">Контакты</h2>
@@ -79,84 +88,93 @@
       <a class="map" href="#">
         <img src="img/map.png" width="560" height="222" alt="Карта">
       </a>
-      <a class="feedback-button" href="#">
-        Напишите нам
-      </a>
+      <div class="columns-button">
+        <a class="button" href="#">
+          Напишите нам
+        </a>
+      </div>
     </section>
-  </main>
+  </div>
+</main>
 
-  <footer class="main-footer">
-    <section class="container">
-      <div class="footer-top">
-          <a class="footer-logo" href="#logo" aria-label="Перейти в начало страницы">
-             <img src="img/logo.svg" width="163.3" height="34.96" alt="DEVICE">
+<footer class="main-footer">
+  <section class="container">
+    <div class="footer-top">
+      <div class="footer-logo">
+        <a href="#logo" aria-label="Перейти в начало страницы">
+          <img src="img/logo.svg" width="163.3" height="34.96" alt="DEVICE">
+        </a>
+      </div>
+      <div class="footer-menu">
+        <div>
+          <a class="enter" href="#">Войти</a>
+        </div>
+        <div>
+          <a class="compare" href="#">Сравнить</a>
+        </div>
+        <div>
+          <a class="basket" href="#">Корзина</a>
+        </div>
+      </div>
+    </div>
+    <div class="footer-middle">
+      <address>
+        г. Москва, ул. Строителей, 15
+      </address>
+      <ul class="footer-navigation">
+        <li class="navigation-item">
+          <a class="navigation-link" href="#">
+            Доставка
           </a>
-          <div>
-              <a class="enter" href="#">Войти</a>
-          </div>
-          <div>
-              <a class="compare" href="#">Сравнить</a>
-          </div>
-          <div>
-              <a class="basket" href="#">Корзина</a>
-          </div>
+        </li>
+        <li class="navigation-item">
+          <a class="navigation-link" href="#">
+            Гарантия
+          </a>
+        </li>
+        <li class="navigation-item">
+          <a class="navigation-link" href="#contacts">Контакты</a>
+        </li>
+      </ul>
+      <div class=phone>
+        <a href="tel:+74954959595">
+          Тел.: +7 (495) 495-95-95
+        </a>
       </div>
-      <div class="footer-middle">
-           <address>
-               г. Москва, ул. Строителей, 15
-           </address>
-           <ul class="footer-navigation">
-               <li class="footer-navigation-item">
-                    <a class="footer-navigation-link" href="#">
-                        Доставка
-                    </a>
-               </li>
-               <li class="footer-navigation-item">
-                    <a class="footer-navigation-link" href="#">
-                      Гарантия
-                    </a>
-               </li>
-               <li class="footer-navigation-item">
-                    <a class="footer-navigation-link" href="#contacts">Контакты</a>
-               </li>
-           </ul>
-               <div class=phone>
-                    <a href="tel:+74954959595">
-                        Тел.: +7 (495) 495-95-95
-                    </a>
-               </div>
-      </div>
-      <div class="footer-bottom">
-           <ul class="social-list">
-                <li class="social-list-item">
-                     <a class="social-list-link" href="#" aria-label="Facebook">Facebook</a>
-                </li>
-                <li class="social-list-item">
-                     <a class="social-list-link" href="#" aria-label="Instagram">Instagram</a>
-                </li>
-                <li class="social-list-item">
-                     <a class="social-list-link" href="#" aria-label="Twitter">Twitter</a>
-                </li>
-           </ul>
-      </div>
-    </section>
-  </footer>
-  </body>
+    </div>
+    <div class="footer-bottom">
+      <ul class="social-button">
+        <li>
+          <a class="social-link" href="#" aria-label="Facebook">Facebook</a>
+        </li>
+        <li>
+          <a class="social-link" href="#" aria-label="Instagram">Instagram</a>
+        </li>
+        <li>
+          <a class="social-link" href="#" aria-label="Twitter">Twitter</a>
+        </li>
+      </ul>
+    </div>
+  </section>
+</footer>
+</body>
 </html>
 
-<section>
+<section class="modal">
+  <h3 class="visually-hidden">Форма обратной связи</h3>
   <button type="button" aria-label="Закрыть">Закрыть</button>
   <form class="feedback-form" action="https://echo.htmlacademy.ru" method="post">
     <p>
       <label for="name">Ваше имя:</label>
-        <input type="text" name="name" id="name" placeholder="Имя Фамилия">
+      <input type="text" name="name" id="name" placeholder="Имя Фамилия">
       <label for="email">Ваш e-mail:</label>
-        <input type="email" name="email" id="email" placeholder="email@example.ru">
+      <input type="email" name="email" id="email" placeholder="email@example.ru">
     </p>
     <p>
       <label for="text-letter">Текст письма:</label>
       <input type="text" name="text-letter" id="text-letter" placeholder="В свободной форме">
-    </p>
-    <button type="submit">Отправить</button>
+    <div class="modal-button">
+      <button type="submit">Отправить</button>
+    </div>
   </form>
 </section>
