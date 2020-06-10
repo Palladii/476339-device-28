@@ -10,7 +10,7 @@
 <body class="page-body inner-page">
 <header class="main-header">
   <nav class="main-navigation" aria-label="Навигация по сайту">
-    <a class="header-logo" id="logo">
+    <a class="header-logo" id="logo" href="index.html">
       <img src="img/logo.svg" width="163.3" height="34.96" alt="логотип DEVICE">
     </a>
     <div class="user-navigation-wrapper">
@@ -21,12 +21,12 @@
           <button class="visually-hidden" type="submit" value="Найти">Найти</button>
         </form>
         <div class="user-navigation">
-          <div>
-            <a class="enter" href="#">Валентин Петухов</a>
-            <a class="enter" href="#">Войти</a>
+          <div class="user-link-wrapper">
+            <a class="user-link" href="#">Валентин Петухов</a>
+            <a class="user-link" href="#">Войти</a>
           </div>
-          <div>
-            <a class="compare" href="#">Сравнить</a>
+          <div class="user-link-wrapper">
+            <a class="user-link" href="#">Сравнить</a>
             <a class="user-link" href="#">Корзина</a>
           </div>
         </div>
@@ -39,14 +39,16 @@
             <a class="navigation-link" href="#">Каталог товаров</a>
           </li>
           <div class="navigation-item-wrapper">
+            <div class="navigation-link-wrapper">
             <li class="navigation-item">
               <a class="navigation-link" href="#">Доставка</a>
             </li>
             <li class="navigation-item">
               <a class="site-navigation-link" href="#">Гарантия</a>
             </li>
+            </div>
             <li class="navigation-item">
-              <a class="navigation-link" href="#contacts">Контакты</a>
+              <a class="navigation-link" href="index.html#contacts">Контакты</a>
             </li>
           </div>
         </ul>
@@ -65,7 +67,7 @@
       <li class="breadcrumbs-item">
         Каталог товаров
       </li>
-      <li class="breadcrumbs-item breadcrumbs-current">
+      <li class="breadcrumbs-item">
         Моноподы для селфи
       </li>
     </ul>
@@ -128,9 +130,9 @@
             <img src="img/item1.png" alt="Любительская селфи-палка" width="360" height="380">
             <div class="cards-item-price">
               <h3>
-                Любительская селфи-палка
+                <span>Любительская селфи-палка</span>
               </h3>
-              <b>500 р.</b>
+              <b>500 руб.</b>
             </div>
           </a>
         </li>
@@ -139,9 +141,10 @@
             <img src="img/item2.png" alt="Профессинальная селфи-палка" width="360" height="380">
             <div class="cards-item-price">
               <h3>
-                Профессинальная селфи-палка
+                <span>Профессинальная
+                  <br>селфи-палка</span>
               </h3>
-              <b>500 р.</b>
+              <b>1 500 руб.</b>
             </div>
           </a>
         </li>
@@ -150,9 +153,10 @@
             <img src="img/item3.png" alt="Непотопляемая селфи-палка" width="360" height="380">
             <div class="cards-item-price">
               <h3>
-                Непотопляемая селфи-палка
+                <span>Непотопляемая
+                  <br>селфи-палка</span>
               </h3>
-              <b>500 р.</b>
+              <b>2 500 руб.</b>
             </div>
           </a>
         </li>
@@ -161,9 +165,9 @@
             <img src="img/item4.png" alt="Селфи-палка Следуй за мной" width="360" height="380">
             <div class="cards-item-price">
               <h3>
-                Селфи-палка "Следуй за мной"
+                <span>Селфи-палка «Следуй за мной»</span>
               </h3>
-              <b>500 р.</b>
+              <b>4 900 руб.</b>
             </div>
           </a>
         </li>
@@ -198,7 +202,7 @@
           </a>
         </li>
         <li class="navigation-item">
-          <a class="navigation-link" href="#contacts">Контакты</a>
+          <a class="navigation-link" href="index.html#contacts">Контакты</a>
         </li>
       </ul>
       <ul class="social-button">
