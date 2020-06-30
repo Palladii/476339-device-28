@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html class="page" lang="ru" xmlns="http://www.w3.org/1999/html" xmlns="http://www.w3.org/1999/html">
+<html class="page" lang="ru" xmlns="http://www.w3.org/1999/xhtml">
 <head>
   <meta charset="utf-8">
   <link rel="stylesheet" href="css/normalize.css">
@@ -29,7 +29,6 @@
         <form class="form-search" action="https://echo.htmlacademy.ru" method="get">
           <label class="visually-hidden" for="search">Поиск</label>
           <input class="search" type="search" name="search" id="search" value="Поиск по сайту">
-
           <button class="button-search" type="submit" value="Найти">Найти</button>
         </form>
         <div class="user-navigation">
@@ -40,51 +39,31 @@
           </div>
         </div>
       </div>
-      <div class="site-navigation-wrapper">
-        <ul class="site-navigation">
-          <li class="navigation-item catalog-link">
-            <a class="navigation-link " href="#">Каталог товаров</a>
-          </li>
-          <div class="navigation-item-wrapper">
-            <div class="navigation-link-wrapper">
-              <li class="navigation-item ">
-                <a class="navigation-link" href="#">Доставка</a>
-              </li>
-              <li class="navigation-item">
-                <a class="site-navigation-link" href="#">Гарантия</a>
-              </li>
+      <div class="site-navigation">
+        <div class="catalog-hidden">
+          <a class="catalog-link" href="#">Каталог товаров</a>
+          <div class="hidden-list">
+            <div class="hidden-column">
+              <a href="#">Виртуальная реальность</a>
+              <a href="#">Моноподы для селфи</a>
+              <a href="#">Экшн-камеры</a>
             </div>
-            <li class="navigation-item contact-link">
-              <a class="navigation-link" href="#contacts">Контакты</a>
-            </li>
+            <div class="hidden-column">
+              <a href="#">Фитнес браслеты</a>
+              <a href="#">Умные часы</a>
+            </div>
+            <div class="hidden-column">
+              <a href="#">Квадрокоптер</a>
+            </div>
           </div>
-        </ul>
-      </div>
-      <div class="catalog-hidden">
-        <ul>
-          <li>
-            <a>Виртуальная реальность</a>
-          </li>
-          <li>
-            <a>Моноподы для селфи</a>
-          </li>
-          <li>
-            <a>Экшн-камеры</a>
-          </li>
-        </ul>
-        <ul>
-          <li>
-            <a>Фитнес браслеты</a>
-          </li>
-          <li>
-            <a>Умнык часы</a>
-          </li>
-        </ul>
-        <ul>
-          <li>
-            <a>Квадрокоптер</a>
-          </li>
-        </ul>
+        </div>
+        <div class="site-navigation-wrapper">
+          <div class="site-link-wrapper">
+            <a href="#">Доставка</a>
+            <a href="#">Гарантия</a>
+          </div>
+            <a href="#contacts">Контакты</a>
+        </div>
       </div>
     </div>
   </nav>
@@ -94,6 +73,7 @@
   <h1 class="visually-hidden">DEVICE-магазин электронной техники</h1>
   <section class="slider">
     <div class="container">
+      <h2 class="visually-hidden">Лучшие товары</h2>
       <ul class="slider-list">
         <li class="slider-item-1 slide slide-current">
           <div class="slide-wrapper">
@@ -197,6 +177,7 @@
   <section class="catalog-products">
     <div class="container">
       <div class="catalog">
+        <h2 class="visually-hidden">Каталог товаров</h2>
         <ul class="catalog-list">
           <li class="catalog-item">
             <a>
@@ -298,18 +279,19 @@
 
   <section class="partners">
     <div class="container">
+      <h2 class="visually-hidden">Наши партнеры</h2>
       <ul class="partners-list">
-        <li>
-          <img src="img/logo-1.png" alt="Dji" width="260" height="100">
+        <li class="Dji">
+          <img src="img/logo-1grey.png" alt="Dji" width="260" height="100">
         </li>
-        <li>
-          <img src="img/logo-2.png" alt="SP GADGETS" width="260" height="100">
+        <li class="GADGETS">
+          <img src="img/logo-2grey.png" alt="SP GADGETS" width="260" height="100">
         </li>
-        <li>
-          <img src="img/logo-3.png" alt="GoPro  Be a HERO." width="260" height="100">
+        <li class="GoPro">
+          <img src="img/logo-3grey.png" alt="GoPro  Be a HERO." width="260" height="100">
         </li>
-        <li>
-          <img src="img/logo-4.png" alt="VIVE" width="260" height="100">
+        <li class="VIVE">
+          <img src="img/logo-4grey.png" alt="VIVE" width="260" height="100">
         </li>
       </ul>
     </div>
@@ -340,7 +322,6 @@
           </li>
         </ul>
         <a class="button columns-button" href=" #"> Подробнее о нас</a>
-
       </section>
 
 
@@ -350,9 +331,10 @@
           Вы можете забрать товар сами, заехав в наш офис. Заодно, вы сможете
           проверить работоспособность покупки. Всякое бывает.
         </p>
-        <a href="#">
-          <img class="map" src="img/map.png" width="560" height="222" alt="Карта">
-        </a>
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2249.112548877999!2d37.52742931552118!3d55.687030980535795!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46b54cf65f5c8955%3A0x694710ccd55501e!2z0YPQuy4g0KHRgtGA0L7QuNGC0LXQu9C10LksIDE1LCDQnNC-0YHQutCy0LAsIDExOTMxMQ!5e0!3m2!1sru!2sru!4v1593422195738!5m2!1sru!2sru"
+          width="560" height="222"  style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"
+          title="г. Москва, ул. Строителей, 15"></iframe>
         <a class="button columns-button" href="#">
           Напишите нам
         </a>
@@ -493,7 +475,7 @@
 </html>
 
 <section class="modal modal-feedback">
-  <h3 class="visually-hidden">Форма обратной связи</h3>
+  <h2 class="visually-hidden">Форма обратной связи</h2>
   <form class="feedback-form" action="https://echo.htmlacademy.ru" method="post">
     <div class="feedback-wrapper">
       <p>
@@ -517,5 +499,9 @@
 
 <section class="modal modal-map">
   <h2 class="visually-hidden">Как до нас добраться</h2>
-  <img src="img/map-big.png" width="994" height="593" alt="Офис компании по адресу г. Москва, ул. Строителей, 15">
+  <iframe
+    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2249.112548877999!2d37.52742931552118!3d55.687030980535795!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46b54cf65f5c8955%3A0x694710ccd55501e!2z0YPQuy4g0KHRgtGA0L7QuNGC0LXQu9C10LksIDE1LCDQnNC-0YHQutCy0LAsIDExOTMxMQ!5e0!3m2!1sru!2sru!4v1593422195738!5m2!1sru!2sru"
+    width="994" height="593" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"
+    title="г. Москва, ул. Строителей, 15"></iframe>
 </section>
+

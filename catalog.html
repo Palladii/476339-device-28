@@ -27,9 +27,10 @@
     <div class="container">
       <div class="user-navigation-wrapper">
         <form class="form-search" action="https://echo.htmlacademy.ru" method="get">
-          <input class="search" type="search" name="search" id="search" value="Поиск по сайту">
           <label class="visually-hidden" for="search">Поиск</label>
-          <button class="visually-hidden" type="submit" value="Найти">Найти</button>
+          <input class="search" type="search" name="search" id="search" value="Поиск по сайту">
+
+          <button class="button-search" type="submit" value="Найти">Найти</button>
         </form>
         <div class="user-navigation">
           <div class="user-link-wrapper">
@@ -42,31 +43,35 @@
           </div>
         </div>
       </div>
-
-      <div class="site-navigation-wrapper">
-        <ul class="site-navigation">
-          <li class="navigation-item">
-            <a class="navigation-link catalog-link" href="#">Каталог товаров</a>
-          </li>
-          <div class="navigation-item-wrapper">
-            <div class="navigation-link-wrapper">
-              <li class="navigation-item">
-                <a class="navigation-link" href="#">Доставка</a>
-              </li>
-              <li class="navigation-item">
-                <a class="site-navigation-link" href="#">Гарантия</a>
-              </li>
+      <div class="site-navigation">
+        <div class="catalog-hidden">
+          <a class="catalog-link" href="#">Каталог товаров</a>
+          <div class="hidden-list">
+            <div class="hidden-column">
+              <a href="#">Виртуальная реальность</a>
+              <a href="#">Моноподы для селфи</a>
+              <a href="#">Экшн-камеры</a>
             </div>
-            <li class="navigation-item contact-link">
-              <a class="navigation-link" href="index.html#contacts">Контакты</a>
-            </li>
+            <div class="hidden-column">
+              <a href="#">Фитнес браслеты</a>
+              <a href="#">Умные часы</a>
+            </div>
+            <div class="hidden-column">
+              <a href="#">Квадрокоптер</a>
+            </div>
           </div>
-        </ul>
+        </div>
+        <div class="site-navigation-wrapper">
+          <div class="site-link-wrapper">
+            <a href="#">Доставка</a>
+            <a href="#">Гарантия</a>
+          </div>
+          <a href="#contacts">Контакты</a>
+        </div>
       </div>
     </div>
   </nav>
 </header>
-
 <main class="catalog-page">
   <div class="container">
     <h1 class="page-title">Моноподы для селфи</h1>
@@ -138,9 +143,7 @@
           </ul>
         </fieldset>
         <fieldset class="bluetooth-checkbox">
-
           <legend>Bluetooth</legend>
-
           <ul>
             <li class="filter-option filter-radio">
               <input class="visually-hidden filter-input-radio filter-input" type="radio" name="Yes" id="Yes" checked>
@@ -182,6 +185,10 @@
               <b>500 руб.</b>
             </div>
           </a>
+          <div class="cards-hidden-buttons">
+          <button class="basket-button">В корзину</button>
+          <button class="compare-button">Добавить к сравнению</button>
+          </div>
         </li>
         <li class="cards-item">
           <a class="card-link" href="product.html">
@@ -194,6 +201,10 @@
               <b>1 500 руб.</b>
             </div>
           </a>
+          <div class="cards-hidden-buttons">
+            <button class="basket-button">В корзину</button>
+            <button class="compare-button">Добавить к сравнению</button>
+          </div>
         </li>
         <li class="cards-item">
           <a class="card-link" href="product.html">
@@ -205,6 +216,10 @@
               <b>2 500 руб.</b>
             </div>
           </a>
+          <div class="cards-hidden-buttons">
+            <button class="basket-button">В корзину</button>
+            <button class="compare-button">Добавить к сравнению</button>
+          </div>
         </li>
         <li class="cards-item">
           <a class="card-link new-card" href="product.html">
@@ -217,6 +232,10 @@
               <b>4 900 руб.</b>
             </div>
           </a>
+          <div class="cards-hidden-buttons">
+            <button class="basket-button">В корзину</button>
+            <button class="compare-button">Добавить к сравнению</button>
+          </div>
         </li>
       </ul>
       <div class="pagination-block">
