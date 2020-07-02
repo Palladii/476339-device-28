@@ -73,7 +73,6 @@
   </nav>
 </header>
 <main class="catalog-page">
-  <div class="container">
     <h1 class="page-title">Моноподы для селфи</h1>
     <ul class="breadcrumbs">
       <li class="breadcrumbs-item">
@@ -86,12 +85,11 @@
         Моноподы для селфи
       </li>
     </ul>
-    <!-- Пропущены разделы выделенные красным -->
     <section class="filters">
       <h2>Фильтр:</h2>
       <form class="filter-form" action="https://echo.htmlacademy.ru" method="get">
-        <fieldset>
-          <legend>Стоимость:</legend>
+        <fieldset class="price-checkbox">
+          <legend>Стоимость</legend>
           <div class="range-controls">
             <div class="scale">
               <div class="bar" style="width: 60%; margin-left: 0">
@@ -101,7 +99,7 @@
               left: 0
             "></div>
             <div class="toggle toggle-max" tabindex="0" style="
-              left: 60%
+              left: 40%
             "></div>
           </div>
           <div class="price-controls">
@@ -112,9 +110,8 @@
               до 5000 <input class="visually-hidden" type="number" name="max-price" value="5000">
             </label>
           </div>
-
         </fieldset>
-        <fieldset>
+        <fieldset class="color-checkbox">
           <legend>Цвет</legend>
           <ul>
             <li class="filter-option filter-checkbox">
@@ -336,9 +333,7 @@
     </section>
     <section class="footer-right-column">
       <div class="user-footer-navigation">
-        <div class="footer-user-link">
-          <a class=" enter-link" href="#">Войти</a>
-        </div>
+          <a class="user-link enter-link" href="#">Войти</a>
         <div class="footer-user-link">
           <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
             <path d="M2.91675 5.36675H4.66675V11.0834H2.91675V5.36675ZM6.18342 2.91675H7.81675V11.0834H6.18342V2.91675ZM9.45008 7.58342H11.0834V11.0834H9.45008V7.58342Z" fill="#FFC600"/>
