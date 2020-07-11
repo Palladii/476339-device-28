@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html class="page" lang="ru" xmlns="http://www.w3.org/1999/xhtml">
+
 <head>
   <meta charset="utf-8">
   <link rel="stylesheet" href="css/normalize.css">
@@ -27,7 +28,7 @@
     <div class="user-navigation-wrapper">
       <form class="form-search" action="https://echo.htmlacademy.ru" method="get">
         <label class="visually-hidden" for="search">Поиск</label>
-        <input class="search" type="search" name="search" id="search" value="Поиск по сайту">
+        <input class="search" type="search" name="search" id="search" placeholder="Поиск по сайту">
         <button class="button-search" type="submit" value="Найти">Найти</button>
       </form>
       <div class="user-navigation">
@@ -40,19 +41,21 @@
     </div>
     <div class="site-navigation">
       <div class="catalog-hidden">
-        <a class="catalog-link" href="#">Каталог товаров</a>
+        <a class="catalog-link" href="#"><span>Каталог товаров</span></a>
         <div class="hidden-list">
-          <div class="hidden-column">
-            <a href="#">Виртуальная реальность</a>
-            <a href="catalog.html#monopods">Моноподы для селфи</a>
-            <a href="#">Экшн-камеры</a>
-          </div>
-          <div class="hidden-column">
-            <a href="#">Фитнес браслеты</a>
-            <a href="#">Умные часы</a>
-          </div>
-          <div class="hidden-column">
-            <a href="#">Квадрокоптер</a>
+          <div class="hidden-list-wrapper">
+            <div class="hidden-column">
+              <a href="#">Виртуальная реальность</a>
+              <a href="catalog.html#monopods">Моноподы для селфи</a>
+              <a href="#">Экшн-камеры</a>
+            </div>
+            <div class="hidden-column">
+              <a href="#">Фитнес браслеты</a>
+              <a href="#">Умные часы</a>
+            </div>
+            <div class="hidden-column">
+              <a href="#">Квадрокоптер</a>
+            </div>
           </div>
         </div>
       </div>
@@ -61,7 +64,7 @@
           <a href="index.html#delivery">Доставка</a>
           <a href="index.html#warranty">Гарантия</a>
         </div>
-        <a class="footer-contacts" href="index.html#contacts">Контакты</a>
+        <a href="index.html#contacts">Контакты</a>
       </div>
     </div>
   </nav>
@@ -72,7 +75,7 @@
   <div class="container">
     <section>
       <h2 class="visually-hidden">Лучшие товары</h2>
-      <div class="slider">
+      <form class="slider">
         <input class="visually-hidden btn1" type="radio" id="btn1" name="toggle" checked>
         <input class="visually-hidden btn2" type="radio" id="btn2" name="toggle">
         <input class="visually-hidden btn3" type="radio" id="btn3" name="toggle">
@@ -169,9 +172,10 @@
             </li>
           </ul>
         </div>
-      </div>
+      </form>
     </section>
   </div>
+
 
   <section class="catalog-products">
     <div class="container">
@@ -245,9 +249,9 @@
         <input class="visually-hidden btn-2" type="radio" id="btn-2" name="toggle">
         <input class="visually-hidden btn-3" type="radio" id="btn-3" name="toggle">
         <div class="service-controls">
-          <label class="delivery-button" for="btn-1" aria-label="Первый слайд">Доставка</label>
-          <Label class="warranty-button" for="btn-2" aria-label="Второй слайд">Гарантия</Label>
-          <label class="credit-button" for="btn-3" aria-label="Третий слайд">Кредит</label>
+          <label for="btn-1" aria-label="Первый слайд" tabindex="0">Доставка</label>
+          <Label for="btn-2" aria-label="Второй слайд" tabindex="0">Гарантия</Label>
+          <label for="btn-3" aria-label="Третий слайд" tabindex="0">Кредит</label>
         </div>
         <div class="service-inner">
           <ul class="service-list">
@@ -340,7 +344,7 @@
           Вы можете забрать товар сами, заехав в наш офис. Заодно, вы сможете
           проверить работоспособность покупки. Всякое бывает.
         </p>
-        <a href="#">
+        <a class="contacts-button-map" href="#">
           <img src="img/map.png" width="560" height="222" alt="Адрес интернет-магазина г. Москва, ул. Строителей, 15">
         </a>
         <a class="button columns-button feedback-button" href="#">
@@ -424,7 +428,8 @@
     <section class="footer-right-column">
       <div class="user-footer-navigation">
         <div class="footer-user-link">
-          <svg width="13" height="14" viewBox="0 0 13 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <svg class="footer-icon" width="13" height="14" viewBox="0 0 13 14" fill="none"
+               xmlns="http://www.w3.org/2000/svg">
             <path
               d="M6.49996 2.33325C7.69704 2.33325 8.66663 3.37742 8.66663 4.66659C8.66663 5.95575 7.69704 6.99992 6.49996 6.99992C5.30288 6.99992 4.33329 5.95575 4.33329 4.66659C4.33329 3.37742 5.30288 2.33325 6.49996 2.33325ZM6.49996 11.6666C6.49996 11.6666 10.8333 11.6666 10.8333 10.4999C10.8333 9.09992 8.72079 7.58325 6.49996 7.58325C4.27913 7.58325 2.16663 9.09992 2.16663 10.4999C2.16663 11.6666 6.49996 11.6666 6.49996 11.6666Z"
               fill="#FFC600"/>
@@ -432,7 +437,8 @@
           <a class="user-link enter-link" href="#">Войти</a>
         </div>
         <div class="footer-user-link">
-          <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <svg class="footer-icon" width="14" height="14" viewBox="0 0 14 14" fill="none"
+               xmlns="http://www.w3.org/2000/svg">
             <path
               d="M2.91675 5.36675H4.66675V11.0834H2.91675V5.36675ZM6.18342 2.91675H7.81675V11.0834H6.18342V2.91675ZM9.45008 7.58342H11.0834V11.0834H9.45008V7.58342Z"
               fill="#FFC600"/>
@@ -440,7 +446,8 @@
           <a class="user-link compare-link" href="#">Сравнить</a>
         </div>
         <div class="footer-user-link">
-          <svg width="10" height="10" viewBox="0 0 10 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <svg class="footer-icon" width="10" height="10" viewBox="0 0 10 10" fill="none"
+               xmlns="http://www.w3.org/2000/svg">
             <g clip-path="url(#clip0)">
               <path
                 d="M9.86215 2.52161C9.79278 2.43982 9.69341 2.39307 9.58927 2.39307H7.65774V3.41871C7.65774 3.88999 7.25359 4.27341 6.75684 4.27341C6.26008 4.27341 5.85593 3.88999 5.85593 3.41871V2.39307H4.05413V3.41871C4.05413 3.88999 3.64999 4.27341 3.15323 4.27341C2.65648 4.27341 2.25233 3.88999 2.25233 3.41871V2.39307H0.32089C0.216656 2.39307 0.117286 2.43982 0.0479169 2.52161C-0.0215425 2.60341 -0.0544254 2.71247 -0.0425335 2.82136L0.605665 8.78452C0.617737 9.45683 1.14179 9.9999 1.78431 9.9999H8.12584C8.76828 9.9999 9.29233 9.45683 9.30449 8.78443L9.95269 2.82127C9.96449 2.71247 9.93161 2.60341 9.86215 2.52161Z"
@@ -462,7 +469,7 @@
         Тел.: +7 (495) 495-95-95
       </a>
       <a class="htmlacademy" href="https://htmlacademy.ru/intensive/htmlcss" aria-label="Лендинг интенсива htmlacademy">
-        <svg class="footer-icon" width="27" height="34" viewBox="0 0 27 34" fill="none"
+        <svg width="27" height="34" viewBox="0 0 27 34" fill="none"
              xmlns="http://www.w3.org/2000/svg">
           <g clip-path="url(#clip0)">
             <path
@@ -506,6 +513,7 @@
 
 <section class="modal modal-map">
   <h2 class="visually-hidden">Как до нас добраться</h2>
+  <button class="modal-close" type="button" aria-label="Закрыть"></button>
   <iframe
     src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2249.112548877999!2d37.52742931552118!3d55.687030980535795!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46b54cf65f5c8955%3A0x694710ccd55501e!2z0YPQuy4g0KHRgtGA0L7QuNGC0LXQu9C10LksIDE1LCDQnNC-0YHQutCy0LAsIDExOTMxMQ!5e0!3m2!1sru!2sru!4v1593422195738!5m2!1sru!2sru"
     width="994" height="593" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"

@@ -1,3 +1,5 @@
+/* Feedback form */
+
 var feedbackLink = document.querySelector(".feedback-button");
 var feedbackPopup = document.querySelector(".modal-feedback");
 var feedbackClose = feedbackPopup.querySelector(".modal-close");
@@ -35,7 +37,7 @@ feedbackClose.addEventListener("click", function (evt) {
 });
 
 feedbackForm.addEventListener("submit", function (evt) {
-  if (!feedbackName.value || !loginPassword.value) {
+  if (!feedbackName.value || !feedbackMail.value) {
     evt.preventDefault();
     feedbackPopup.classList.remove("modal-error");
     feedbackPopup.offsetWidth = feedbackPopup.offsetWidth;
@@ -56,3 +58,30 @@ window.addEventListener("keydown", function (evt) {
     }
   }
 });
+
+/* Modal map*/
+
+var mapLink = document.querySelector(".contacts-button-map");
+
+var mapPopup = document.querySelector(".modal-map");
+var mapClose = mapPopup.querySelector(".modal-close");
+
+mapLink.addEventListener("click", function (evt) {
+  evt.preventDefault();
+  mapPopup.classList.add("modal-show");
+});
+
+mapClose.addEventListener("click", function (evt) {
+  evt.preventDefault();
+  mapPopup.classList.remove("modal-show");
+});
+
+window.addEventListener("keydown", function (evt) {
+  if (evt.keyCode === 27) {
+    if (mapPopup.classList.contains("modal-show")) {
+      evt.preventDefault();
+      mapPopup.classList.remove("modal-show");
+    }
+  }
+})
+
