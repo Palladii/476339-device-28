@@ -323,7 +323,7 @@ input[type="radio"].visually-hidden {
 .hidden-list {
   position: absolute;
   display: none;
-  top: 20px;
+  top: 24px;
   left: -60px;
   width: 1160px;
   z-index: 10;
